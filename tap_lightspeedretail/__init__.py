@@ -8,7 +8,7 @@ from singer import utils
 from singer import metadata
 from singer.catalog import Catalog, CatalogEntry, Schema
 from . import streams as streams_
-from .context import Context
+from .context import Stream
 from . import schemas
 
 REQUIRED_CONFIG_KEYS = [
@@ -55,7 +55,7 @@ def sync(ctx):
     
 def main():
     args = utils.parse_args(REQUIRED_CONFIG_KEYS)
-    ctx = Context(args.config, args.state)
+    ctx = Stream(args.config, args.state)
     if args.discover:
         ctx.catalog = discover(ctx)
         discover(ctx).dump()

@@ -155,6 +155,170 @@
       "stream": "Order"
     },
     {
+      "tap_stream_id": "OrderLine",
+      "key_properties": [
+        "orderLineID"
+      ],
+      "schema": {
+        "properties": {
+          "orderLineID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "quantity": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "price": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "originalPrice": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "checkedIn": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "numReceived": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "timeStamp": {
+            "inclusion": "available",
+            "format": "date-time",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "total": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "itemID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "inclusion": "available",
+        "type": "object"
+      },
+      "stream": "OrderLine"
+    },
+    {
+      "tap_stream_id": "Register",
+      "key_properties": [
+        "registerID"
+      ],
+      "schema": {
+        "properties": {
+          "self": {
+            "inclusion": "available",
+            "format": "uri",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "registerID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "open": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "openTime": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "archived": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "openEmployeeID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "shopID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "ccTerminalID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "inclusion": "available",
+        "type": [
+          "null",
+          "object"
+        ]
+      },
+      "stream": "Register"
+    },
+    {
       "tap_stream_id": "Item",
       "key_properties": [
         "itemID"
@@ -363,113 +527,6 @@
         ]
       },
       "stream": "Item"
-    },
-    {
-      "tap_stream_id": "VendorReturn",
-      "key_properties": [
-        "vendorReturnID"
-      ],
-      "schema": {
-        "properties": {
-          "self": {
-            "inclusion": "available",
-            "format": "uri",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "vendorReturnID": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "status": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "refNum": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "archived": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "sentDate": {
-            "inclusion": "available",
-            "format": "date-time",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "shipCost": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "otherCost": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "vendorID": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "shopID": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "noteID": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "Vendor": {
-            "inclusion": "available"
-          },
-          "Shop": {
-            "inclusion": "available"
-          },
-          "Note": {
-            "inclusion": "available"
-          },
-          "VendorReturnItems": {
-            "inclusion": "available"
-          }
-        },
-        "inclusion": "available",
-        "type": [
-          "null",
-          "object"
-        ]
-      },
-      "stream": "VendorReturn"
     },
     {
       "tap_stream_id": "Customer",
@@ -1481,6 +1538,113 @@
       "stream": "Vendor"
     },
     {
+      "tap_stream_id": "VendorReturn",
+      "key_properties": [
+        "vendorReturnID"
+      ],
+      "schema": {
+        "properties": {
+          "self": {
+            "inclusion": "available",
+            "format": "uri",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "vendorReturnID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "status": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "refNum": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "archived": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "sentDate": {
+            "inclusion": "available",
+            "format": "date-time",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "shipCost": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "otherCost": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "vendorID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "shopID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "noteID": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Vendor": {
+            "inclusion": "available"
+          },
+          "Shop": {
+            "inclusion": "available"
+          },
+          "Note": {
+            "inclusion": "available"
+          },
+          "VendorReturnItems": {
+            "inclusion": "available"
+          }
+        },
+        "inclusion": "available",
+        "type": [
+          "null",
+          "object"
+        ]
+      },
+      "stream": "VendorReturn"
+    },
+    {
       "tap_stream_id": "Category",
       "key_properties": [
         "categoryID"
@@ -2023,90 +2187,6 @@
         ]
       },
       "stream": "Transfer"
-    },
-    {
-      "tap_stream_id": "OrderLine",
-      "key_properties": [
-        "orderLineID"
-      ],
-      "schema": {
-        "properties": {
-          "orderLineID": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "quantity": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "price": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "originalPrice": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "checkedIn": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "numReceived": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "timeStamp": {
-            "inclusion": "available",
-            "format": "date-time",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "total": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "orderID": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "itemID": {
-            "inclusion": "available",
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        },
-        "inclusion": "available",
-        "type": "object"
-      },
-      "stream": "OrderLine"
     },
     {
       "tap_stream_id": "TransferItem",

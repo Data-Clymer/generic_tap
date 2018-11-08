@@ -37,6 +37,7 @@ def generate_access_token():
 
 class Client(object):
     def __init__(self, config):
+        #pdb.set_trace()
        	self.user_agent = config.get("user_agent")
         self.base_url = ""
         self.auth = None
